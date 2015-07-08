@@ -3,7 +3,7 @@
 	<!-- Article Template
 	================================================== -->
 	<div class="container">
-		<div class="twelve columns">
+		<div class="eight columns">
 			<article id="content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

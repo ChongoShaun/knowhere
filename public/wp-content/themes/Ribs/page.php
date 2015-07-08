@@ -3,7 +3,7 @@
 	<!-- Page Template
 	================================================== -->
 	<div class="container">
-		<div class="twelve columns">
+		<div class="eight columns">
 			<?php the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<h1><?php the_title();?></h1>

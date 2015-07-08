@@ -28,7 +28,11 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('assets/scss/*.scss')
-        .pipe(sass())
+		.pipe(sass({errLogToConsole: true}))
+        .pipe(sass({outputStyle: 'expanded', sourceComments: true }))
+        .pipe(rename('main.ugly.css'))
+        .pipe(gulp.dest('assets/css'))        
+        .pipe(sass({outputStyle: 'compressed '}))
 		.pipe(concat('main.css'))
 		.pipe(csso())
         .pipe(gulp.dest(themePath + 'assets/css'))
