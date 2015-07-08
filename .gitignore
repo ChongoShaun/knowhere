@@ -1,4 +1,5 @@
 *.log
+*.DS_Store
 .htaccess
 sitemap.xml
 sitemap.xml.gz
@@ -9,3 +10,5 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade
 wp-content/wp-cache-config.php
+node_modules/
+node_modules/*
