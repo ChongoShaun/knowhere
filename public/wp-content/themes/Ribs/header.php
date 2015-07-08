@@ -16,7 +16,7 @@
 	<!-- CSS
   ================================================== -->
   	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/stylesheets/style.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/main.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,12 +41,12 @@
 	<!-- Header / Nav / Global Etc
 	================================================== -->
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="twelve columns">
 			<div id="logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
 			</div>
 		</div>
-		<div class="sixteen columns">
+		<div class="twelve columns">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</div>
 	</div>
