@@ -15,7 +15,9 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var pngquant = require('imagemin-pngquant');
-var csso = require('gulp-csso');
+var minifyCss = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var reload = browserSync.reload;
 
 // Lint Task
@@ -28,13 +30,11 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('assets/scss/*.scss')
-		.pipe(sass({errLogToConsole: true}))
-        .pipe(sass({outputStyle: 'expanded', sourceComments: true }))
-        .pipe(rename('main.ugly.css'))
-        .pipe(gulp.dest('assets/css'))        
-        .pipe(sass({outputStyle: 'compressed '}))
-		.pipe(concat('main.css'))
-		.pipe(csso())
+		.pipe(sourcemaps.init())
+	        .pipe(sass({outputStyle: 'compressed '}))
+			.pipe(autoprefixer())
+			.pipe(concat('main.css'))
+ 		.pipe(sourcemaps.write())
         .pipe(gulp.dest(themePath + 'assets/css'))
         .pipe(reload({stream: true}));
 });
