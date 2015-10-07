@@ -29,14 +29,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '!gxZLPG1T-Ch3dmmL#x*');
+define('SECURE_AUTH_KEY',  'Sd%FI4nXPMUaF!n$ggnG');
+define('LOGGED_IN_KEY',    'HH/6253K%gBK(ZFId_Fs');
+define('NONCE_KEY',        '!yw c5! V5LNgG-A9sp0');
+define('AUTH_SALT',        'c@T$Ta=fGQPGZTr2EIKJ');
+define('SECURE_AUTH_SALT', 'EC2pc0KR#5IENIY%qRFy');
+define('LOGGED_IN_SALT',   '/8KFwBtfMWrXAbhIEpyt');
+define('NONCE_SALT',       'mqJYP$NJFytA_qVtZ)21');
 
 /**#@-*/
 
@@ -46,7 +46,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_brkdchgo_';
+$table_prefix  = 'wp_75frmthsk5_';
 
 /**
  * WordPress Localized Language, defaults to English.

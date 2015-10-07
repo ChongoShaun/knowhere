@@ -16,15 +16,10 @@
 
 // Set environment based on hostname
 switch ($hostname) {
-    case 'dev.basewp.10.1.10.13.xip.io:8888':
+    case 'knowhere.dev':
         define('WP_ENV', 'development');
         break;
-    
-    case 'clients.barkdesignchicago.com':
-        define('WP_ENV', 'staging');
-        break;
-
-    case 'www.domain.com':
+    case 'www.knowhere.com':
     default: 
         define('WP_ENV', 'production');
 }

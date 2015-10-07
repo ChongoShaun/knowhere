@@ -86,6 +86,11 @@ if (!defined('WP_HOME')) {
 unset($hostname, $protocol);
 
 /** End of WordPress Multi-Environment Config **/
+//define( 'WP_CACHE', true );
+require_once( dirname( __FILE__ ) . '/gd-config.php' );
+define( 'FS_METHOD', 'direct');
+define('FS_CHMOD_DIR', (0705 & ~ umask()));
+define('FS_CHMOD_FILE', (0604 & ~ umask()));
 
 
 /* That's all, stop editing! Happy blogging. */
